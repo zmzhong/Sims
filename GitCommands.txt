@@ -1,0 +1,51 @@
+Helpful Commands in git
+Commands should be input into Windows command line
+
+------------------
+Checking if you have git
+------------------
+Version:
+git --version
+
+/*
+shows which version of git you have
+*/
+------------------
+Getting the Repo
+------------------
+Clone:
+git clone https://github.com/zmzhong/Sims.git
+
+/*
+Used to make a fresh copy of the repo to your computer.
+Navigate to the directory that you want the repo in.
+*/
+------------------
+Updating the Repo
+------------------
+Pull:
+git pull
+
+/*
+Gets updates to the repo to your local machine. If there are conflicts between what you have and what is online you will need to merge. (Choose which changes to accept)
+*/
+------------------
+Pushing Changes
+------------------
+Steps: 
+1. Add
+2. Commit
+3. Push
+
+git add *
+// adds all your changes
+git commit
+// Write a message showing what you updated. After writing the 
+// commit message, press escape, and type ":wq" (without the quotes)
+// to finish the commit.
+git push
+// pushes your changes online. Will fail if your login is incorrect,
+// or if your local repo is not up to date.
+
+
+
