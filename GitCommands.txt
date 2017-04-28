@@ -1,5 +1,9 @@
-Helpful Commands in git
-Commands should be input into Windows command line
+GitHub's official git cheatsheet: https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf
+
+Commonly used Git command line instructions
+Commands should be input into a command line interpreter (e.g. Windows Command Prompt, Mac Terminal)
+
+GitHub's official git cheatsheet: https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf
 
 ------------------
 Checking if you have git
@@ -10,6 +14,7 @@ git --version
 /*
 shows which version of git you have
 */
+
 ------------------
 Getting the Repo
 ------------------
@@ -20,6 +25,7 @@ git clone https://github.com/zmzhong/Sims.git
 Used to make a fresh copy of the repo to your computer.
 Navigate to the directory that you want the repo in.
 */
+
 ------------------
 Updating the Repo
 ------------------
@@ -29,6 +35,14 @@ git pull
 /*
 Gets updates to the repo to your local machine. If there are conflicts between what you have and what is online you will need to merge. (Choose which changes to accept)
 */
+
+Fetch:
+git fetch
+
+/*
+Downloads objects and refs from another repository
+*/
+
 ------------------
 Pushing Changes
 ------------------
@@ -38,14 +52,21 @@ Steps:
 3. Push
 
 git add *
-// adds all your changes
+// stages all changes made in your local repository for the next commit
+// OR:
+git add <filename>
+// stages all changes made in specified file for the next commit
+
 git commit
-// Write a message showing what you updated. After writing the 
+// records changes to the repository
+// (You should write a message showing what you updated. After writing the 
 // commit message, press escape, and type ":wq" (without the quotes)
-// to finish the commit.
+// to finish the commit.)
+// OR:
+git commit -m "<Description of changes made>"
+// records changes to the repository along with given log message
+
 git push
-// pushes your changes online. Will fail if your login is incorrect,
+// pushes your changes online. (Uploads all local branch commits to version control system (e.g. GitHub, BitBucket).) 
+// Will fail if your login is incorrect,
 // or if your local repo is not up to date.
-
-
-
